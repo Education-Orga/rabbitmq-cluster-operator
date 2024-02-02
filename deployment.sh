@@ -13,7 +13,7 @@ curl -sL https://github.com/operator-framework/operator-lifecycle-manager/releas
 
 # deploy rabbitmq cluster operator from operatorhub manifests
 echo "deploy rabbitmq cluster operator..."
-kubectl create -f https://operatorhub.io/install/mongodb-enterprise.yaml
+kubectl create -f https://operatorhub.io/install/rabbitmq-cluster-operator.yaml
 
 # deploy mongodb crds
 kubectl apply -f configs/rabbitmq-cluster.yaml -n "$RABBITMQ_NAMESPACE"
